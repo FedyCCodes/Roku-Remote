@@ -1,6 +1,6 @@
 # Roku Remote: 
 
-This project is a simple experiment for having a TV remote app to control your Roku TV. This desktop application built with electron that is cross platform on MacOS, Windows and Linux.
+This project is a simple experiment for having a TV remote app to control your Roku TV. This desktop application is built with electron and is cross-platform on MacOS, Windows, and Linux.
 
 ## How to use:
 
@@ -20,13 +20,13 @@ npm run make
 
 The command will generate a packaged executable with all the code from this app.
 
-*WARNING: This has been tested multiple times on macOS but hasn't been tested on windows so there might be inconsistencies*
+*WARNING: This has been tested multiple times on macOS but hasn't been tested on Windows so there might be inconsistencies*
 
 ## How it works:
 
 ### General:
 
-The way the application works is by scanning all devices connected to your local network and identifies which one is a Roku TV using the API. 
+The way the application works is by scanning all devices connected to your local network and identifying which one is a Roku TV using the API. 
 
 Once it has found all the TVs connected to your local network it will load up the first TV it found and allow you to control it from the remote.
 
@@ -40,7 +40,7 @@ For the applications, it extracts the application data from the TV and then prov
 
 If the application is unable to find the TV then the application will inform the user that no TVs were found.
 
-If you are sure that there is a TV connected to the network, then you can reload the application and open up the developer tools and in the console it will show all the different IP addresses that were scanned.
+If you are sure that there is a TV connected to the network, then you can reload the application and open up the developer tools, and in the console, it will show all the different IP addresses that were scanned.
 
 ## Using The Code:
 
@@ -56,7 +56,7 @@ To get all the applications from the TV we can again use the `node-roku` API and
 
 I tweaked the package a little bit by having it scan more devices quickly and having it respond instantly when a television is found rather than waiting for the end of the system. 
 
-*NOTE: these changes makes the callback in the `Roku.find` function to be called more than once (first time a TV is found, and then again after all the TVs are found)*
+*NOTE: these changes make the callback in the `Roku.find` function be called more than once (the first time a TV is found, and then again after all the TVs are found)*
 
 ### The Application:
 
@@ -67,7 +67,7 @@ If you want to run a command like a button being pressed on the remote you can w
 RokuRemote.runButton("home");
 ```
 
-For more commands you can go to the [Roku Developer Website](https://developer.roku.com/docs/developer-program/dev-tools/external-control-api.md) to find different functions.
+For more commands, you can go to the [Roku Developer Website](https://developer.roku.com/docs/developer-program/dev-tools/external-control-api.md) to find different functions.
 
 There are also keybinds that are stored in the object `RokuRemote.keyEndpoint`. It's a hashtable that has the key as the letter on the keyboard and the value as the command. 
 * Example: `RokuRemote.keyEndpoint.H = "home";`
@@ -80,7 +80,7 @@ The IP addresses of the TVs are all stored in the array `RokuRemote.addresses` a
 
 ## Sources:
 
-This project was built with following frameworks:
+This project was built with the following frameworks:
 - [Node JS](https://nodejs.org/en): The core developer tools of this application
 - [ElectronJS](https://www.electronjs.org/): Foundation of the application
 - [Electron Forge](https://www.electronforge.io/): Secondary development layer for Electron
