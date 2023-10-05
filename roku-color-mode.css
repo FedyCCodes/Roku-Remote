@@ -1,0 +1,59 @@
+/* roku-color-mode.css */
+
+body {
+  font-family: Helvetica,Arial,sans-serif;
+  overflow-y: hidden;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* darkmode colors */
+  
+  body {
+    background: rgb(37, 33, 41);
+    color: white;
+  }
+  
+  .roku-button-secondary {
+    color: #c271ff;
+  }
+  
+  svg line {
+    stroke:#c271ff;
+  }
+  svg path {
+    stroke:#c271ff;
+    fill: #c271ff;
+  }
+  
+  svg polyline {
+    stroke:#c271ff;
+    fill: #c271ff;
+  }
+  
+  svg rect {
+    stroke:#c271ff;
+  }
+  
+}
+
+
+@media (prefers-color-scheme: light) {
+  
+  svg rect {
+    stroke:#662d91;
+  }
+  svg line {
+    stroke:#662d91;
+  }
+  
+  svg path {
+    stroke:#662d91;
+    fill: #662d91;
+  }
+  
+  svg polyline {
+    stroke:#662d91;
+    fill: #662d91;
+  }
+  
+}

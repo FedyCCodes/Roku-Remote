@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="img-src 'self' data:; default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link href="./roku-buttons.css" rel="stylesheet">
+    <link href="./roku-color-mode.css" rel="stylesheet">
+    <title>Roku Remote</title>
+  </head>
+  <body>
+    <div id="root">
+    <!-- You can also require other files to run in this process -->
+      <p id="roku-title-main" class="roku-title">Main: Loading</p>
+      <div style="display:flex;">
+        <button class="roku-button-secondary"></button>
+        <button class="roku-button-secondary"></button>
+        <button class="roku-button-secondary"></button>
+      </div>
+      <div style="display:flex;">
+        <button class="roku-button-primary"></button>
+      </div>
+      <div style="display:flex;">
+        <button class="roku-button-primary"></button>
+        <button class="roku-button-primary"></button>
+        <button class="roku-button-primary"></button>
+      </div>
+      <div style="display:flex;">
+        <button class="roku-button-primary"></button>
+      </div>
+      <div style="display:flex;">
+        <button class="roku-button-secondary"></button>
+        <button class="roku-button-secondary"></button>
+        <button class="roku-button-secondary"></button>
+      </div>
+      <div style="display:flex;">
+        <button class="roku-button-secondary"></button>
+        <button class="roku-button-secondary"></button>
+        <button class="roku-button-secondary"></button>
+      </div>
+      <div style="display:flex;">
+        <button id="roku-search-button" class="roku-button-secondary"></button>
+        <input id="roku-search-text" type="text" class="roku-button-secondary" style="width: 126px;"/>
+      </div>
+      <p id="roku-title-app" class="roku-title">Apps: Loading</p>
+      <div id="roku-apps" style="overflow-x: scroll;height: 73px;display: block;width: 284px;white-space: nowrap;">
+        
+      </div>
+    </div>
+    <script src="./renderer.js"></script>
+  </body>
+</html>

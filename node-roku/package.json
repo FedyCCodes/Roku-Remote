@@ -1,0 +1,50 @@
+{
+  "_args": [
+    [
+      "node-roku@0.0.10",
+      "/Users/22fcherif/Desktop/My Files/Personal/Cross Platform/Electron/Roku Remote"
+    ]
+  ],
+  "_development": true,
+  "_from": "node-roku@0.0.10",
+  "_id": "node-roku@0.0.10",
+  "_inBundle": false,
+  "_integrity": "sha512-//yWUxaJDqIGW/QXm2Av3kHRRXH8zvdVN7uXBK9fAgcbE+yyLje9cLgkiWtumqVWroRlfPTuBTDzHir0BWQbbQ==",
+  "_location": "/node-roku",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "node-roku@0.0.10",
+    "name": "node-roku",
+    "escapedName": "node-roku",
+    "rawSpec": "0.0.10",
+    "saveSpec": null,
+    "fetchSpec": "0.0.10"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/node-roku/-/node-roku-0.0.10.tgz",
+  "_spec": "0.0.10",
+  "_where": "/Users/22fcherif/Desktop/My Files/Personal/Cross Platform/Electron/Roku Remote",
+  "author": {
+    "name": "Garciacom"
+  },
+  "dependencies": {
+    "request": "^2.74.0"
+  },
+  "description": "Find any roku device connected to your internet network, easy and fast, just scan and save to json file so you don't need to scan everytime, then you can controll anything from POST enjoy and support this proyect.",
+  "keywords": [
+    "roku",
+    "rokujs"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "node-roku",
+  "scripts": {
+    "start": "node index.js",
+    "t": "node test.js"
+  },
+  "version": "0.0.10"
+}
