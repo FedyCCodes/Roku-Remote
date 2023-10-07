@@ -2,7 +2,7 @@
   "_args": [
     [
       "node-roku@0.0.10",
-      "/Users/22fcherif/Desktop/My Files/Personal/Cross Platform/Electron/Roku Remote"
+      "../"
     ]
   ],
   "_development": true,
@@ -27,7 +27,7 @@
   ],
   "_resolved": "https://registry.npmjs.org/node-roku/-/node-roku-0.0.10.tgz",
   "_spec": "0.0.10",
-  "_where": "/Users/22fcherif/Desktop/My Files/Personal/Cross Platform/Electron/Roku Remote",
+  "_where": "../",
   "author": {
     "name": "Garciacom"
   },
